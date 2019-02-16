@@ -31,9 +31,9 @@ public class HashMapStudy {
         for(int i =0; i<11;i++) {
             keys.add(new Node());
             map.put(keys.get(i), i);
-
+            printMap(map);
         }
-        printMap(map);
+
 
         keys.stream().map(map::get).forEach(System.out::println);
 
